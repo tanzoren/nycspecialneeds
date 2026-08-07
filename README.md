@@ -2,9 +2,6 @@
 
 A plain-language, parent-built guide to navigating developmental disability services in New York City, compiled while going through the process firsthand.
 
-**Live page:** https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
-*(update this link once GitHub Pages is turned on in Settings → Pages)*
-
 ## What's covered
 
 - **Special Education Schools** — the CSE/IEP process, plus public, state-funded, and private school options
