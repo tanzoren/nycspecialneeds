@@ -308,6 +308,7 @@
     border: 1px solid var(--gridline);
     border-radius: 8px;
     padding: 12px 14px;
+    min-width: 0;
   }
 
   .res-top {
@@ -316,6 +317,7 @@
     justify-content: space-between;
     gap: 10px;
     flex-wrap: wrap;
+    min-width: 0;
   }
 
   ul.resources a.link {
@@ -358,6 +360,22 @@
   }
   .tier-label:first-child { margin-top: 0; }
 
+  .table-scroll-hint {
+    display: none;
+    font-size: 0.74rem;
+    color: var(--text-muted);
+    margin: 0 0 6px;
+  }
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+  .table-scroll table.school-table {
+    margin-bottom: 0;
+  }
+
   table.school-table {
     width: 100%;
     border-collapse: collapse;
@@ -395,6 +413,13 @@
 
   @media (max-width: 600px) {
     nav.toc ol { columns: 1; }
+    header.hero h1 { font-size: 1.5rem; }
+    section.step h2 { font-size: 1.05rem; }
+    .part-header h2 { font-size: 1.3rem; }
+    .table-scroll-hint { display: block; }
+    .top-nav a.part-link { padding: 7px 12px; }
+    ul.resources a.link, ul.resources span.link { padding: 2px 0; display: inline-block; }
+    .tag { white-space: normal; text-align: right; }
   }
 
   @media print {
@@ -743,6 +768,8 @@
     <p class="desc">A parent-crowdsourced, informal list of Manhattan-area private (and a few state-funded) special education schools, grouped into rough tiers from fewer to more supports, based on notes from schools themselves, parent feedback in a community forum, and follow-up research. <strong>This is not an official or vetted ranking</strong>: it reflects one point-in-time attempt to compare options, isn't a comment on any child's potential, and the tier a school sits in below is a loose approximation, not a formal classification. Use it only as a starting point for your own research, and confirm everything directly with each school.</p>
 
     <div class="tier-label">Less restrictive / fewer supports</div>
+    <p class="table-scroll-hint">Swipe sideways to see all columns →</p>
+    <div class="table-scroll">
     <table class="school-table">
       <tr><th>School</th><th>Demographics / diagnosis focus</th><th>Ages served</th><th>Notes</th></tr>
       <tr><td class="school-name"><a href="https://www.dwight.edu/newyork/academics/quest-learning-support" target="_blank" rel="noopener">Dwight School</a> (Quest support track)</td><td>General independent-school population; the "Quest" program supports students with language-based learning differences and ADHD/attention needs within the mainstream IB curriculum</td><td>Grades 1–10, with continued support options in 11–12</td><td>18 West 89th St (Upper West Side). 1:1 pull-out support (roughly 3x per 6-day cycle) integrated with the IB "Approaches to Learning" framework; strengths-based, self-advocacy-focused.</td></tr>
@@ -755,8 +782,11 @@
       <tr><td class="school-name"><a href="https://www.churchillschoolnyc.org/" target="_blank" rel="noopener">The Churchill School and Center</a></td><td>Language-based, ADHD; not Autism-focused</td><td>K–10</td><td>301 East 29th St (Kips Bay). College guidance, student-guided, clubs/passions, advocacy, community/service learning. Contact the school directly through its <a href="https://www.churchillschoolnyc.org/admissions/admissions-welcome" target="_blank" rel="noopener">admissions page</a>.</td></tr>
       <tr><td class="school-name"><a href="https://marymcdowell.org/" target="_blank" rel="noopener">Mary McDowell Friends School</a> (Brooklyn)</td><td>Learning disabilities and ADHD</td><td>K–12</td><td>Three Brooklyn campuses: Lower School (Cobble Hill), Middle School (Carroll Gardens), Upper School (Brooklyn Heights); 400+ students total. Small class sizes with structured, multi-sensory, differentiated instruction; roughly 10:1:1 in elementary, 12:1:1 in high school.</td></tr>
     </table>
+    </div>
 
     <div class="tier-label">In the middle</div>
+    <p class="table-scroll-hint">Swipe sideways to see all columns →</p>
+    <div class="table-scroll">
     <table class="school-table">
       <tr><th>School</th><th>Demographics / diagnosis focus</th><th>Ages served</th><th>Notes</th></tr>
       <tr><td class="school-name"><a href="https://www.aaronschool.org/" target="_blank" rel="noopener">The Aaron School</a></td><td>Learning disabilities in reading, writing, and math, plus attention, sensory, and social challenges; per the school's own site, not explicitly framed as Autism-specific, though it may still be a fit for higher-functioning autistic students with a language-based profile (worth confirming directly)</td><td>K–12</td><td>309 E 45th St, New York, NY 10017. (212) 867-9594. Individualized approach integrating academics, enrichment, and therapeutic/clinical services; small, nurturing climate; not equipped for primary behavioral issues.</td></tr>
@@ -770,8 +800,11 @@
       <tr><td class="school-name"><a href="https://www.smithschool.org/" target="_blank" rel="noopener">The Smith School</a></td><td>Depression, anxiety, school refusal, ADHD and related disorders, Pragmatic Communication Disorder; some students with histories of bullying trauma or psychiatric hospitalization</td><td>Middle &amp; high school</td><td>131 West 86th St (Upper West Side). Small, structured classes integrating social-cognition/executive-functioning skills into curricula, plus onsite speech-language therapy and counseling.</td></tr>
       <tr><td class="school-name"><a href="https://www.stevenson-school.org/" target="_blank" rel="noopener">Robert Louis Stevenson School</a></td><td>Therapeutic college-prep school for bright adolescents with ADHD, anxiety, depression, or social/peer difficulties; not a classic self-contained special-ed school; five full-time psychologists on staff</td><td>Grades 8–12 (occasionally strong 7th-graders)</td><td>24 West 74th St (Upper West Side). Best-confidence match for this generically-named entry: worth confirming this is the intended school before relying on it.</td></tr>
     </table>
+    </div>
 
     <div class="tier-label">More restrictive / supportive</div>
+    <p class="table-scroll-hint">Swipe sideways to see all columns →</p>
+    <div class="table-scroll">
     <table class="school-table">
       <tr><th>School</th><th>Demographics / diagnosis focus</th><th>Ages served</th><th>Notes</th></tr>
       <tr><td class="school-name"><a href="https://cookeschool.org/" target="_blank" rel="noopener">The Cooke School and Institute</a></td><td>Neurodivergent students and those with mild-to-moderate cognitive/developmental disabilities</td><td>Ages 5–21: K through a Transitions/vocational program for older students</td><td>1713 Madison Ave (East Harlem), with the Transitions program at 60 MacDougal St (SoHo). "7-pillar" educational approach with a strong vocational-training track (Transitions program) for communication and job-readiness skills.</td></tr>
@@ -786,14 +819,18 @@
       <tr><td class="school-name"><a href="https://www.yai.org/affiliate/manhattan-star-academy" target="_blank" rel="noopener">Manhattan Star Academy</a></td><td>Global developmental delays, autism spectrum disorder, speech/language delays, and other neurodevelopmental disabilities (also historically served Down syndrome and hearing/vision impairment)</td><td>Ages 3–21 (Lower School 3–12, Upper School 12–21)</td><td>YAI-affiliated. 180 Amsterdam Avenue, 3rd Floor (Upper West Side). Multidisciplinary model blending classroom instruction with therapy; Upper School adds life-skills, community-engagement, and transition-readiness programming. Funding model (state-funded vs. private) not specified on their site; confirm directly.</td></tr>
       <tr><td class="school-name"><a href="https://www.academicswest.com/" target="_blank" rel="noopener">Academics West</a></td><td>Bright students who struggle emotionally/interpersonally</td><td>Not specified</td><td>37 W. 65th St, 5th Floor. (212) 580-0080. Accredited therapeutic day school with a 5:1:1 ratio in younger grades; about 13 clinicians serve roughly 75 students, offering OT, speech, art therapy, and individual/group therapy under a CBT-based model. Reports 100% of high school graduates go on to college; admissions decisions are made by a multi-person committee assessing overall program fit.</td></tr>
     </table>
+    </div>
 
     <div class="tier-label">Other / autism-specific</div>
+    <p class="table-scroll-hint">Swipe sideways to see all columns →</p>
+    <div class="table-scroll">
     <table class="school-table">
       <tr><th>School</th><th>Demographics / diagnosis focus</th><th>Ages served</th><th>Notes</th></tr>
       <tr><td class="school-name"><a href="https://www.rebeccaschool.org/" target="_blank" rel="noopener">Rebecca School</a></td><td>Autism only</td><td>Pre-K and up</td><td>35 E 21st St (Flatiron/NoMad). DIR/Floortime model built on relationship-based interaction to develop social, communication, and thinking skills; roughly 2:1 student-teacher ratio, average class size 8, plus speech, OT, PT, and counseling.</td></tr>
       <tr><td class="school-name"><a href="https://www.keswellschool.org/" target="_blank" rel="noopener">The Keswell School</a></td><td>Autism only</td><td>Ages 3–21</td><td>219 Stanton St (Lower East Side). 1:1 student-teacher ratio; operates year-round, 8:45am–4:30pm; most students arrive by bus.</td></tr>
       <tr><td class="school-name"><a href="https://summitqueens.com/" target="_blank" rel="noopener">The Summit School</a></td><td>Bright students with mild learning disabilities and average-to-above-average IQ, including ADHD, high-functioning autism, dyslexia, and Tourette syndrome</td><td>Grades 3–12</td><td>Tuition-free, state-funded school (unlike most others in this list); accepts students from all five boroughs plus Westchester/Nassau/Suffolk. Located in Jamaica Estates, Queens, not Manhattan, but included here as the closest NYC-area match.</td></tr>
     </table>
+    </div>
   </section>
 
   <a class="back-to-top" href="#top">↑ Back to top</a>
