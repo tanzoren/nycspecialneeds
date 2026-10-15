@@ -20,6 +20,4 @@ The whole site is a single self-contained file, `index.html`. To publish a chang
 
 Compiled by a parent while going through the OPWDD application, evaluation, and school-placement process, to save other families some of the searching, drawing on official state and city sources plus community-shared lists. It's offered as a starting point, not legal, medical, or benefits advice. Always confirm current requirements, costs, wait times, and insurance/Medicaid acceptance directly with each organization, and with OPWDD, your DDRO, a Care Coordination Organization, or your school's CSE, since program details and web addresses do change.
 
-This page is not indexed by search engines (see the `noindex` meta tag in `index.html`); it's meant to be found by people you share the direct link with.
-
 Last compiled: August 2026.
